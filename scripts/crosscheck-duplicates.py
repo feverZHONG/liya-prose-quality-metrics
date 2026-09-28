@@ -12,7 +12,7 @@
     python3 crosscheck-duplicates.py <本稿.md> --min 12        # 连续重合多少字算撞车（默认 14）
 
 不给 --against 时：按数据根自动收集（环境变量 LIYA_DATA_ROOT → 本脚本上级含 skills/ 的那层
-→ /opt/data），扫 `archive/**/article.md` 并排除本稿自身。--against 给目录时：先找该目录下的
+→ 家目录），扫 `archive/**/article.md` 并排除本稿自身。--against 给目录时：先找该目录下的
 `article.md`，找不到才退回该目录下所有 `*.md`（免得把大纲／规则档当语料扫出假命中）。
 
 判读（命中 ≠ 必须改）：
@@ -41,7 +41,7 @@ def find_root():
         if parent == p:
             break
         p = parent
-    cands.append("/opt/data")
+    cands.append(os.path.expanduser("~"))   # 兜底不再写死作者路径（换环境设 LIYA_DATA_ROOT）
     for c in cands:
         if os.path.isdir(os.path.join(c, "skills")):
             return c

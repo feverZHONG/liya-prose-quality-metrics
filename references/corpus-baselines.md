@@ -5,7 +5,7 @@
 ## 一、语料在哪
 
 ```
-/opt/data/archive/bili-articles/articles/2026/cv*-【短篇故事_莉娅】*/article.md
+<数据根>/archive/bili-articles/articles/2026/cv*-【系列名】*/article.md
 ```
 
 一篇一个目录；`article.md` 的正文前面有几行元数据（`文字：`／`大纲/校对`／`发布时间`／`#` 标题／`>` 引用块），量之前先剥掉（脚本里的 `strip_meta()` 就是干这个的）。
