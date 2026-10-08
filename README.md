@@ -1,4 +1,4 @@
-# 稿子质量的量化体检与修法
+# 稿子质量的量化体检与修法 · Prose Quality Metrics
 
 > 稿子读起来「平」怎么办——**先量再改**。对话占比 · 句长 σ · 台词宽度 · 标点谱 · 段均句，量完对着九种「平」逐条修。
 > 适用任何长篇叙事稿（小说 / 短篇 / 说书稿）。全套 7 个工具**纯标准库**，不依赖任何本机环境。
@@ -88,8 +88,8 @@ python3 scripts/corpus-band.py <语料目录…>             # 定带/改带之�
 - [liya-dev-workflow](https://github.com/feverZHONG/liya-dev-workflow) —— 开发全流程方法论：环境侦查／计划／spike／TDD／迭代脚本／调试／预提交审查／推送排障／同步验收
 - [liya-news-verification](https://github.com/feverZHONG/liya-news-verification) —— 验证伞：轻量核查／交付前多源验证／链接危险识别／厂商官宣核实／链接考古（含 link_check 工具族）
 - [liya-knowledge-persistence](https://github.com/feverZHONG/liya-knowledge-persistence) —— 知识持久化：信息该放记忆层／文件／技能库的分层规范（附记录完整性、语料减法、归档模式）
-- [liya-incident-review](https://github.com/feverZHONG/liya-incident-review)
-- [liya-document-translation](https://github.com/feverZHONG/liya-document-translation)
+- [liya-incident-review](https://github.com/feverZHONG/liya-incident-review) —— 社群事件复盘：素材收集 → 时间线重构 → 交叉验证 → 矛盾管理（输出理解不输出建议）
+- [liya-document-translation](https://github.com/feverZHONG/liya-document-translation) —— 论文与长文档翻译：提取全文 → 术语表 → 并行分章 → 质量抽查 → 归档
 
 ## 提思路 / 提修正
 
